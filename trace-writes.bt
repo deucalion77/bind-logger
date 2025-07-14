@@ -1,0 +1,4 @@
+tracepoint:syscalls:sys_enter_write
+{
+    printf("WRITE|%d|%d\n", pid, uid);
+}

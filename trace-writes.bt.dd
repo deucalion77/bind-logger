@@ -1,0 +1,4 @@
+kprobe:vfs_write
+{
+    printf("WRITE|%d|%d\n", pid, uid);
+}
